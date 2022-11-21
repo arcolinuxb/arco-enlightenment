@@ -100,7 +100,7 @@ reflector
 reiserfsprogs
 rp-pppoe
 rsync
-#rxvt-unicode-terminfo
+rxvt-unicode-terminfo
 screen
 sdparm
 sg3_utils
@@ -375,7 +375,7 @@ qt5ct
 #powertop
 ripgrep
 #rofi
-#rxvt-unicode
+rxvt-unicode
 #simple-scan
 #shotwell
 speedtest-cli-git
@@ -472,9 +472,9 @@ rate-mirrors-bin
 #the_platinum_searcher-bin
 the_silver_searcher
 #trizen
-#urxvt-fullscreen
-#urxvt-perls
-#urxvt-resize-font-git
+urxvt-fullscreen
+urxvt-perls
+urxvt-resize-font-git
 #wttr
 yad
 #yakuake

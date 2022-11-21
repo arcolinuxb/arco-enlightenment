@@ -227,6 +227,7 @@ tput setaf 2
 echo "Phase 5 : "
 echo "- Changing all references"
 echo "- Adding time to /etc/dev-rel"
+echo "- Autologin off"
 tput sgr0
 echo "################################################################## "
 echo
@@ -249,7 +250,10 @@ echo
 
 	#sddm.conf user-session
 	oldname5='Session=xfce'
-	newname5='Session='$dmDesktop
+
+	#no autologin
+	#newname5='Session='$dmDesktop
+	newname5='#Session='$dmDesktop
 
 	echo "Changing all references"
 	echo
@@ -273,6 +277,9 @@ echo
 	date_build=$(date -d now)
 	echo "Iso build on : "$date_build
 	sudo sed -i "s/\(^ISO_BUILD=\).*/\1$date_build/" $buildFolder/archiso/airootfs/etc/dev-rel
+
+	echo "Autologin off"
+	#sudo sed -i 's/User=liveuser/#User=liveuser/g' $buildFolder/archiso/airootfs/etc/sddm.conf.d/kde_settings.conf
 
 
 #echo
